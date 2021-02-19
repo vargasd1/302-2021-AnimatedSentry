@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117954903632795625}
   m_LocalRotation: {x: 0.016348053, y: -0, z: -0, w: 0.9998664}
-  m_LocalPosition: {x: 0.18, y: -0.365, z: 0}
+  m_LocalPosition: {x: 0.18, y: -0.367, z: 0.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2340528001038982117}
@@ -927,6 +927,7 @@ MonoBehaviour:
   target: {fileID: 0}
   wantsToTarget: 0
   visionDistance: 10
+  visionAngle: 45
 --- !u!114 &127722606133936048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 4
+  leg1: {fileID: 5829814473809253534}
+  leg2: {fileID: 7778580184111742375}
 --- !u!1 &2340528001038982114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,7 +1147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7178549029933708490}
   m_LocalRotation: {x: 0.016348053, y: -0, z: -0, w: 0.9998664}
-  m_LocalPosition: {x: -0.346, y: -0.365, z: 0}
+  m_LocalPosition: {x: -0.346, y: -0.367, z: 0.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2340527999325598408}
