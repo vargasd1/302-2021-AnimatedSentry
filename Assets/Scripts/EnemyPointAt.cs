@@ -23,7 +23,9 @@ public class EnemyPointAt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CanSeeThing(Player.transform)) AimAtPlayer();
+       if (Player) if (CanSeeThing(Player.transform)) AimAtPlayer();
+
+        
     }
 
     private void AimAtPlayer()

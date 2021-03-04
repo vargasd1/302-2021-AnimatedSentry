@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2167ae41781deca4cbf49c01d0f294b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabExplosion: {fileID: 6032179792624216465, guid: 2dfcf04c1de44704bad9fc1317ee3888, type: 3}
   healthMax: 100
 --- !u!114 &5652109602078431150
 MonoBehaviour:
@@ -214,10 +215,12 @@ MonoBehaviour:
   target: {fileID: 0}
   visDistance: 5
   visionAngle: 45
+  bulletSpeed: 10
   Player: {fileID: 0}
   rPS: 1
   tRotator: {fileID: 5542617167877153025}
   prefabMuzzleFlash: {fileID: 2170637681836935752, guid: 54dfd18f4edd0de46a8969bf06ff2211, type: 3}
+  prefabBullet: {fileID: 8447081446207641524, guid: 8dffdac4a305112478a7bcd97372e3e2, type: 3}
   tBarrel: {fileID: 7866178131362010985}
 --- !u!1 &1808157080402233370
 GameObject:
@@ -376,10 +379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b26ab00a36253e4fb646609ce964d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visionDistance: 5
-  lockRotationX: 0
+  visionDistance: 20
+  lockRotationX: 1
   lockRotationY: 0
-  lockRotationZ: 0
+  lockRotationZ: 1
   Player: {fileID: 0}
 --- !u!1 &6746218771113604933
 GameObject:

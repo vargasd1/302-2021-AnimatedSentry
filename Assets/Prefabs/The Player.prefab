@@ -720,7 +720,6 @@ GameObject:
   - component: {fileID: 2340528000446094012}
   - component: {fileID: 2340528000446094013}
   - component: {fileID: 2340528000446094010}
-  - component: {fileID: 2340528000446094011}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -791,20 +790,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2340528000446094011
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2340528000446094008}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &2340528000860073944
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2167ae41781deca4cbf49c01d0f294b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabExplosion: {fileID: 6032179792624216465, guid: 2dfcf04c1de44704bad9fc1317ee3888, type: 3}
   healthMax: 100
 --- !u!1 &2340528001038982114
 GameObject:

@@ -8,6 +8,8 @@ public class EnemyTargeting : MonoBehaviour
     
     public float visDistance = 10;
     public float visionAngle = 45;
+    public float bulletSpeed = 10;
+    
 
     public GameObject Player;
 
@@ -21,12 +23,14 @@ public class EnemyTargeting : MonoBehaviour
     private Vector3 startPosTRotator;
 
     public ParticleSystem prefabMuzzleFlash;
+    public GameObject prefabBullet;
     public Transform tBarrel;
 
 
     private void Start()
     {
         Player = GameObject.FindObjectOfType<PlayerMovement>().gameObject;
+        
     }
 
     
@@ -45,9 +49,13 @@ public class EnemyTargeting : MonoBehaviour
         if (!CanSeeThing(Player.transform)) return;
 
         if (tBarrel) Instantiate(prefabMuzzleFlash, tBarrel.position, tBarrel.rotation);
+        var bullet = Instantiate(prefabBullet, tBarrel.position, tBarrel.rotation);
+        bullet.GetComponent<Rigidbody>().velocity = (Player.transform.position - tBarrel.position).normalized * bulletSpeed;
         cooldownShoot = 1 / rPS;
 
+        
 
+        
 
     }
 
